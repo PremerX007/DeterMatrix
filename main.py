@@ -12,10 +12,10 @@ print("****** DeterMatrix By PremerX007!! ******")
 print("[Matrix Options]")
 print("(1) 3x3 Determinant ")
 print("(2) 4x4 Determinant ")
-selecter = input("[!] You Select .. ")
+selector = input("[!] You Select .. ")
 
 # 3X3 Matrix Determinant
-while(fx == "y" and selecter == "1"):
+while(fx == "y" and selector == "1"):
     print("\n**************************")
     print("* 3x3 Matrix Determinant *")
     print("**************************")
@@ -31,7 +31,7 @@ while(fx == "y" and selecter == "1"):
             break
 
 # 4X4 Matrix Determinant
-while(fx == "y" and selecter == "2"):
+while(fx == "y" and selector == "2"):
     print("\n**************************")
     print("* 4x4 Matrix Determinant *")
     print("**************************")
