@@ -7,12 +7,28 @@ def DETERMINANT_4X4():
     m4 = ((e*j*o)+(f*k*m)+(g*i*n)) - ((m*j*g)+(n*k*e)+(o*i*f))
     det = (a*m1)+(b*(-1)*m2)+(c*m3)+(d*(-1)*m4)
     return det
+    
+def ADJOINT():
+    o1 = (e*i)-(h*f)
+    o2 = (d*i)-(g*f)
+    o3 = (d*h)-(g*e)
+    t1 = (b*i)-(h*c)
+    t2 = (a*i)-(g*c)
+    t3 = (a*h)-(g*b)
+    h1 = (b*f)-(e*c)
+    h2 = (a*f)-(d*c)
+    h3 = (a*e)-(d*b)
+    print("[%d %d %d]"%(o1,t1*-1,h1))
+    print("[%d %d %d]"%(o2*-1,t2,h2*-1))
+    print("[%d %d %d]"%(o3,t3*-1,h3))
+    return
 
 fx = "y"
-print("****** DeterMatrix By PremerX007!! ******")
+print("****** DeterMatrix By PremerX007!! ******\n")
 print("[Matrix Options]")
-print("(1) 3x3 Determinant ")
-print("(2) 4x4 Determinant ")
+print("(1) 3x3 Determinant")
+print("(2) 4x4 Determinant")
+print("(3) Adjoint Matrix\n...")
 selector = input("[!] You Select .. ")
 
 # 3X3 Matrix Determinant
@@ -43,6 +59,21 @@ while(fx == "y" and selector == "2"):
         det = DETERMINANT_4X4()
         print("\nAnswer : %d"%det)
         fx = input("[!] Next?? [y/n] .. ")
+        if (fx == "n"):
+            break
+
+# Adjoint Matrix
+while(fx == "y" and selector == "3"):
+    print("\n******************")
+    print("* Adjoint Matrix *")
+    print("******************")
+    while(True):
+        a, b, c = map(int , input("\nRow 1 : ").split())
+        d, e, f = map(int , input("Row 2 : ").split())
+        g, h, i = map(int , input("Row 3 : ").split())        
+        print("\n***Answer***")
+        ADJOINT()
+        fx = input("\n[!] Next?? [y/n] .. ")
         if (fx == "n"):
             break
 
