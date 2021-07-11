@@ -30,7 +30,7 @@ while(fx == "m"):
     print("\n[Matrix Menu]")
     print("(1) 3x3 Determinant")
     print("(2) 4x4 Determinant")
-    print("(3) Adjoint Matrix\n...")
+    print("(3) 3X3 Adjoint Matrix\n...")
     selector = input("[!] You Select .. ")
 
     # 3X3 Matrix Determinant
@@ -66,9 +66,9 @@ while(fx == "m"):
 
     # Adjoint Matrix
     while(fx == "y" and selector == "3"):
-        print("\n******************")
-        print("* Adjoint Matrix *")
-        print("******************")
+        print("\n**********************")
+        print("* 3X3 Adjoint Matrix *")
+        print("**********************")
         while(True):
             a, b, c = map(int , input("\nRow 1 : ").split())
             d, e, f = map(int , input("Row 2 : ").split())
