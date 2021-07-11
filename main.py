@@ -1,4 +1,5 @@
-# Matrix Determinant
+###### Matrix Determinant ######
+
 def DETERMINANT_4X4():
     m1 = ((f*k*p)+(g*l*n)+(h*j*o)) - ((n*k*h)+(o*l*f)+(p*j*g))
     m2 = ((e*k*p)+(g*l*m)+(h*i*o)) - ((m*k*h)+(o*l*e)+(p*i*g))
@@ -23,7 +24,6 @@ while(fx == "y" and selector == "1"):
         a, b, c = map(int , input("\nแถว 1 : ").split())
         d, e, f = map(int , input("แถว 2 : ").split())
         g, h, i = map(int , input("แถว 3 : ").split())
-
         det = ((a*e*i)+(b*f*g)+(c*d*h)) - ((g*e*c)+(h*f*a)+(i*d*b))
         print("\nAnswer : %d"%det)
         fx = input("[!] Next?? [y/n] .. ")
@@ -39,8 +39,7 @@ while(fx == "y" and selector == "2"):
         a, b, c, d = map(int , input("\nแถว 1 : ").split())
         e, f, g, h = map(int , input("แถว 2 : ").split())
         i, j, k, l = map(int , input("แถว 3 : ").split())
-        m, n, o, p = map(int , input("แถว 3 : ").split())        
-
+        m, n, o, p = map(int , input("แถว 4 : ").split())        
         det = DETERMINANT_4X4()
         print("\nAnswer : %d"%det)
         fx = input("[!] Next?? [y/n] .. ")
