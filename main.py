@@ -3,7 +3,7 @@
 def DETERMINANT_4X4():
     m1 = ((f*k*p)+(g*l*n)+(h*j*o)) - ((n*k*h)+(o*l*f)+(p*j*g))
     m2 = ((e*k*p)+(g*l*m)+(h*i*o)) - ((m*k*h)+(o*l*e)+(p*i*g))
-    m3 = ((e*j*p)+(f*l*m)+(h*i*n)) - ((n*j*h)+(n*l*e)+(p*i*f))
+    m3 = ((e*j*p)+(f*l*m)+(h*i*n)) - ((m*j*h)+(n*l*e)+(p*i*f))
     m4 = ((e*j*o)+(f*k*m)+(g*i*n)) - ((m*j*g)+(n*k*e)+(o*i*f))
     det = (a*m1)+(b*(-1)*m2)+(c*m3)+(d*(-1)*m4)
     return det
